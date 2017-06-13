@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+	
+
+	<ul class="list-group list-inline ">
+	{% for movie in movies %}
+		<li class="list-group-item">
+			<p>{{ movie.title.capitalize() }}</p>
+		</li>
+		
+	{% endfor %}
+	</ul>
+
+{% endblock %}
